@@ -21,6 +21,7 @@ const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 const PORT = process.env.PORT || 3000;
 
+const serviceAccountKey = JSON.parse(process.env.FIREBASE_ADMIN_CREDENTIALS);
 // Initialize Firebase Admin
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccountKey)
