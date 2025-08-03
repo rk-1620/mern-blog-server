@@ -6,7 +6,7 @@ import { nanoid } from 'nanoid';
 import jwt from 'jsonwebtoken';
 import cors from 'cors';
 import admin from 'firebase-admin';
-import serviceAccountKey from "./react-blogs-website-1beb2-firebase-adminsdk-fbsvc-a3b6331a0c.json" with { type: "json" };
+// import serviceAccountKey from "./react-blogs-website-1beb2-firebase-adminsdk-fbsvc-a3b6331a0c.json" with { type: "json" };
 import { getAuth } from 'firebase-admin/auth';
 import User from "./Schema/User.js";
 import aws from "aws-sdk"
